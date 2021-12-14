@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tinos&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor0: #E6F7D0;
+    --cor1: #FA922D;
+    --cor2: #FA8514;
+    --cor3: #84D8F0;
+    --cor4: #c9edf7;
+    --cor5: #E26BFA;
+
+    --fonte-titulo: 'Sacramento', cursive;
+    --fonte-titulo2: 'Amatic SC', sans-serif;
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-texto: 'Tinos', sans-serif;
+    --fonte-subtitulo: 'Satisfy', sans-serif;
+}
+
+header {
+    background-image: linear-gradient(to bottom, #84D8F0,#c9edf7);
+    text-align: center;
+    padding: 15px;
+}
+
+header h1 {
+    color: var(--cor2);
+    font-family: var(--fonte-titulo2);
+    font-size: 3em;
+}
+
+header p {
+    font-family: var(--fonte-subtitulo);
+    font-size: 1.2em;
+    margin-top: 0.5px;
+}
+
+ul {
+    list-style-type: none;
+    background-color: var(--cor4);
+    font-family: var(--fonte-texto);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    display: inline;
+}
+
+li a, .botao {
+    display: inline-block;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.menu {
+    display: inline-block;
+}
+
+.opcoes {
+    display: none;
+    position: absolute;
+    background-color: var(--cor2);
+    min-width: 160px;
+}
+
+.opcoes a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.opcoes a:hover {
+    background-color: var(--cor1);
+    color: white;
+}
+
+.menu:hover .opcoes {
+    display: block;
+    border-radius: 4px;
+}
+
+li a:hover {
+    background-color: var(--cor2);
+    color: white;
+    border-radius: 4px;
+}
+
+.receitas-inicio {
+    background-color: white;
+    margin: 50px 50px 50px 50px;
+}
+
+.receitas-inicio li {
+    display: inline-block;
+    text-align: center;
+    border: solid 0.5px;
+    margin: 15px;
+    padding: 10px 10px;  
+}
+
+.receitas-inicio h2 {
+    padding: 10px;
+}
+
+.receitas-inicio li:hover {
+    background-color: var(--cor4);
+    cursor: pointer;
+}
+
+footer {
+    background-color: var(--cor3);
+    color: white;
+    bottom: 0;
+    width: 100%;
+    position: fixed;  
+    text-align: center;   
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: var(--cor2);
+}
